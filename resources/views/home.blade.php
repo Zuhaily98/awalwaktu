@@ -1,7 +1,38 @@
 @extends('layouts.app')
 
-@section('content')
+@section('carousel')
     <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" style=" width:100%; height: 500px !important;">
+                <div class="carousel-item active">
+                    <img class="d-block w-100"
+                        src="https://storage.googleapis.com/afs-prod/media/c3459dfc73464c90a85f5c298bc52d59/3000.jpeg"
+                        alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://media.vanityfair.com/photos/5a4ff54d9e599e16cd3a9c98/16:9/w_1536,h_864,c_limit/t--MAG-0218-Mecca-Disaster.jpg"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100"
+                        src="https://img.jakpost.net/c/2020/06/02/2020_06_02_96681_1591074285._large.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+@endsection
+
+@section('content')
+    {{-- <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -20,31 +51,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="container">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="https://storage.googleapis.com/afs-prod/media/c3459dfc73464c90a85f5c298bc52d59/3000.jpeg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="https://media.vanityfair.com/photos/5a4ff54d9e599e16cd3a9c98/16:9/w_1536,h_864,c_limit/t--MAG-0218-Mecca-Disaster.jpg" alt="Second slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="https://img.jakpost.net/c/2020/06/02/2020_06_02_96681_1591074285._large.jpg" alt="Third slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-    </div>
+
 
     {{-- <body onload="digitized();">
         <div style="background-color:#F3F3F3;
@@ -84,29 +93,29 @@
 
 @section('css')
     <style>
-        body {
-            background-image: url("https://unsplash.com/photos/ZglHN7Y1dIk/download?force=true&w=1920");
-            background-attachment: fixed !important;
-            background-repeat: no-repeat !important;
-            background-position: top left !important;
-            background-size: 100%;
-        }
+        /* body {
+                background-image: url("https://unsplash.com/photos/ZglHN7Y1dIk/download?force=true&w=1920");
+                background-attachment: fixed !important;
+                background-repeat: no-repeat !important;
+                background-position: top left !important;
+                background-size: 100%;
+            } */
 
         /* #clock {
-            height: 100px;
-            width: 800px;
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            padding-top: 70px;
-            font-family: courier, monospace;
-            text-align: center;
-            color: white;
-            font-size: 100px;
-        } */
+                height: 100px;
+                width: 800px;
+                margin: auto;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                padding-top: 70px;
+                font-family: courier, monospace;
+                text-align: center;
+                color: white;
+                font-size: 100px;
+            } */
 
     </style>
 @endsection
